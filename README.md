@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ❄️ WEATHA
+> Minimalistic weather web-app.
+
+![img](https://i.imgur.com/G1r5R4I.gif)
+
+**Foreword:** This is untidied project that requires clean-up, namely splitting up components. I am working on a better, tidy React Native clone of this web application.
 
 ## Available Scripts
 
