@@ -1,0 +1,239 @@
+.weather {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 2s;
+  padding: 10px 20px 10px 20px;
+}
+
+.weather-data {
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 200px;
+}
+
+.weather-temp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: 100px;
+  padding: 10px 0 20px 0;
+}
+
+.weather-temp .curr,
+.weather-temp .min, 
+.weather-temp .max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.weather-temp .curr h1 {
+  font-size: 80px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+.weather-temp .curr h2 {
+  font-size: 40px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  margin: -25px 0 0 5px;
+}
+
+.weather-temp .min h1, .weather-temp .max h1 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #cecece;
+  font-family: 'Muli', sans-serif;
+}
+
+.weather-temp .min h2, .weather-temp .max h2 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #cecece;
+  font-family: 'Muli', sans-serif;
+  margin: 0 0 0 5px;
+}
+
+.weather-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+
+.weather-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33px;
+}
+
+.weather-stat img {
+  height: 30px;
+  width: auto;
+}
+
+.weather-stat i {
+  color: white;
+  padding-right: 5px;
+}
+
+.weather-stat p {
+  font-size: 14px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.weather-loc {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
+.weather-loc h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.weather-loc span {
+  font-weight: 700;
+}
+
+.forecast {
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.day {
+  padding: 2px 0 2px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.day img {
+  width: 30px;
+  height: auto;
+}
+
+.day .temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day .temp h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-transform: lowercase !important;
+}
+
+.day .temp h2 {
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  margin: -4px 0 0 2px;
+}
+
+.powered-by {
+  padding-top: 20px;
+  color: #cecece;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.powered-by a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(17, 154, 218);
+}
+
+.powered-by a:hover {
+  color: rgb(0, 200, 255);
+}
+
+@media screen and (min-width: 992px) {
+  .weather {
+    width: 40%;
+  }
+}
+
+.weather form {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.weather form input {
+  width: 80%;
+}
+
+.weather form button {
+  width: 15%;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid black;
+  border-color:black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
